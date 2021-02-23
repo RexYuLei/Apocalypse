@@ -37,6 +37,11 @@ namespace GameCore
             {
                 mCharacter.StopMove();
             }
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                mCharacter.DetectClosetProp();
+            }
         }
     }
 }

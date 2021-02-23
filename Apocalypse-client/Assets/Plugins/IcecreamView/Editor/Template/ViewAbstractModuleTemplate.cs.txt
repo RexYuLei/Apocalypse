@@ -1,0 +1,23 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using IcecreamView;
+
+public class #SCRIPTNAME# : IC_AbstractModule
+{
+    public override void OnInitView()
+    {
+    }
+
+    public override void OnOpenView(Dictionary<string,IC_ViewData> parameters)
+    {
+    }
+
+    public override void OnCloseView()
+    {
+    }
+
+    public override void OnDestoryView()
+    {
+    }
+}
