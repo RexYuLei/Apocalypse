@@ -10,5 +10,6 @@
 *.sln
 Library
 Logs
+Temp
 UserSettings
 obj
