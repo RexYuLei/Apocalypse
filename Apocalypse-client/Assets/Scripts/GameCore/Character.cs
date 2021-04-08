@@ -42,6 +42,13 @@ public class Character : MonoBehaviour
         
     }
 
+    public void AutoMove()
+    {
+        mCurState = ECharacterState.Running;
+        mAnimator.SetBool("Run", true);
+        mRigidbody.velocity = walkSpeed * transform.forward;
+    }
+
     /// <summary>
     /// 行走
     /// </summary>
