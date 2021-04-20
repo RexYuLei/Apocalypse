@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -61,6 +62,18 @@ public class MobileController : MonoBehaviour
         else
         {
             mCharacter.StopMove();
+        }
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("ItemsHeap"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                mCharacter.Seek(other.transform);
+            }
         }
     }
 }

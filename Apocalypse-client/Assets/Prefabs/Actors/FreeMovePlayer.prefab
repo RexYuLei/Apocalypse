@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1678758964144305112}
   - component: {fileID: 8960227930101323426}
   m_Layer: 0
-  m_Name: AutoMovePlayer
+  m_Name: FreeMovePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,6 +22,7 @@ public enum ECharacterState
     None,
     Running,     //跑步中
     Climbing,    //攀爬中
+    Seeking,     //寻找物资中
 }
 
 public class Character : MonoBehaviour
@@ -109,5 +110,14 @@ public class Character : MonoBehaviour
                 
             }
         }
+    }
+
+    public void Seek(Transform rTrans)
+    {
+        mCurState = ECharacterState.Climbing;
+        var rDir = rTrans.position - transform.position;
+        rDir.y = 0;
+        transform.forward = Vector3.Normalize(rDir);
+        mAnimator.SetBool("Seek", true);
     }
 }
